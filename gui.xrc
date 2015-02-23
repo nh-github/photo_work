@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxFrame" name="appFrame">
+    <object class="wxMenuBar" name="appMenu">
+      <object class="wxMenu" name="fileMenu">
+        <label>File</label>
+        <object class="wxMenuItem" name="new">
+          <label>New</label>
+          <bitmap stock_id="wxART_NEW"/>
+          <accel>ctrl-n</accel>
+          <XRCED>
+            <events>EVT_MENU</events>
+          </XRCED>
+        </object>
+        <object class="wxMenuItem" name="open">
+          <label>&amp;Open</label>
+          <bitmap stock_id="wxART_FILE_OPEN"/>
+          <accel>ctrl-o</accel>
+          <XRCED>
+            <events>EVT_MENU</events>
+          </XRCED>
+        </object>
+        <object class="wxMenuItem" name="save">
+          <label>&amp;Save</label>
+          <bitmap stock_id="wxART_FILE_SAVE"/>
+          <accel>ctrl-s</accel>
+          <XRCED>
+            <events>EVT_MENU</events>
+          </XRCED>
+        </object>
+        <object class="wxMenuItem" name="saveAs">
+          <label>Save &amp;As</label>
+          <bitmap stock_id="wxART_FILE_SAVE_AS"/>
+          <accel>ctrl-shift-s</accel>
+          <XRCED>
+            <events>EVT_MENU</events>
+          </XRCED>
+        </object>
+        <object class="wxMenuItem" name="exit">
+          <label>&amp;Quit</label>
+          <bitmap stock_id="wxART_QUIT"/>
+          <accel>ctrl-q</accel>
+          <XRCED>
+            <events>EVT_MENU</events>
+          </XRCED>
+        </object>
+      </object>
+      <object class="wxMenu" name="editMenu"/>
+    </object>
+    <object class="wxToolBar" name="basicTools">
+      <object class="tool" name="tbNew">
+        <bitmap stock_id="wxART_NEW"/>
+        <label>New</label>
+        <XRCED>
+          <events>EVT_TOOL</events>
+        </XRCED>
+      </object>
+      <object class="tool" name="tbSave">
+        <bitmap stock_id="wxART_FILE_SAVE"/>
+        <label>Save</label>
+        <XRCED>
+          <events>EVT_TOOL</events>
+        </XRCED>
+      </object>
+      <object class="tool" name="tbSaveAs">
+        <bitmap stock_id="wxART_FILE_SAVE_AS"/>
+        <label>Save As</label>
+        <XRCED>
+          <events>EVT_TOOL</events>
+        </XRCED>
+      </object>
+    </object>
+    <object class="wxStatusBar" name="appStatus"/>
+    <object class="wxPanel" name="basePanel">
+      <object class="wxBoxSizer">
+        <object class="sizeritem">
+          <object class="wxButton" name="fooButton">
+            <label>CLICK HERE</label>
+            <XRCED>
+              <events>EVT_BUTTON</events>
+            </XRCED>
+          </object>
+        </object>
+        <object class="sizeritem">
+          <object class="wxStaticText" name="changeMe">
+            <size>90,20</size>
+            <label>LABEL</label>
+            <style>wxALIGN_CENTRE</style>
+          </object>
+        </object>
+        <orient>wxVERTICAL</orient>
+      </object>
+    </object>
+  </object>
+</resource>
